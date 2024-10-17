@@ -114,7 +114,7 @@ while running:
 
     for bubble in bubbles:
         if bubble_hit_ground(bubble.y, bubble.radius):
-            gmover_text, gmover_rect = build_text("game over", (400, 300), 'red', 60)
+            gamover_text, gamover_rect = build_text("game over", (400, 300), 'red', 60)
             game_over = True
             for bu in bubbles:
                 bubbles.remove(bu)
@@ -125,7 +125,7 @@ while running:
                 difficulty += 1
 
     if game_over:
-        screen.blit(gmover_text, gmover_rect)
+        screen.blit(gamover_text, gamover_rect)
 
     pygame.display.flip()
 pygame.quit()
