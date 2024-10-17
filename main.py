@@ -120,9 +120,10 @@ while running:
                 bubbles.remove(bu)
         for blt in bullets:
             if bubble.intersects(blt):
-                bubbles.remove(bubble)
+                bubble.radius = 3
                 bullets.remove(blt)
                 difficulty += 1
+
 
     if game_over:
         screen.blit(gamover_text, gamover_rect)
