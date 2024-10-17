@@ -124,7 +124,6 @@ while running:
                 bullets.remove(blt)
                 difficulty += 1
 
-
     if game_over:
         screen.blit(gamover_text, gamover_rect)
 
